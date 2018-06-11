@@ -24,8 +24,7 @@ public class customItemController : rewardOrPunishmentController {
 			tex = new Texture2D(5, 5);
 			tex.LoadImage(fileData); //..this will auto-resize the texture dimensions.
 			
-			Sprite newSprite = new Sprite();
-			newSprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0, 0), 50f);
+			Sprite newSprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0, 0), 50f);
 			//should it be a worldObject, endorphinthing or what?
 			transform.position = new Vector3(position.x, position.y, 0);
 			transform.rotation = new Quaternion(0, 0, rotation, 0);
